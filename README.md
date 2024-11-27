@@ -3,13 +3,13 @@
 
  Rehabilitation Center Management Information System (RCMIS)
 
- ##Overview
+ ###Overview
 
 The Rehabilitation Center Management Information System (RCMIS) is a comprehensive platform designed to streamline operations in addiction recovery and rehabilitation centers. Built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, the system offers a range of features including patient management, appointment scheduling, progress reporting, and AI-powered relapse prediction.
 
 ---
 
-## Features
+###Features
 
 - User Roles: Role-based access for Admins, Professionals, and Patients.
 - Patient Management: Add, view, edit, and discharge patients with detailed records.
@@ -21,7 +21,7 @@ The Rehabilitation Center Management Information System (RCMIS) is a comprehensi
 
 ---
 
- Tech Stack
+ ###Tech Stack
  Frontend:
 - React.js: For building a dynamic and responsive user interface.
 - Material-UI/Bootstrap: For modern and accessible UI components.
@@ -29,10 +29,10 @@ The Rehabilitation Center Management Information System (RCMIS) is a comprehensi
 - Node.js: Runtime environment for server-side development.
 - Express.js Backend framework for API development.
 
- Database:
+ ###Database:
 - MongoDB: Document-oriented NoSQL database for storing system data.
 
- Additional Tools:
+ ###Additional Tools:
 - Axios: For making API calls.
 - JWT (JSON Web Tokens): For secure authentication.
 - CatBoost: For implementing the AI relapse prediction model.
