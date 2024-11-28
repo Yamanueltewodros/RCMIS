@@ -1,0 +1,124 @@
+/* General page style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #3c4043;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.population-name {
+    font-size: 20px;
+    color: #202124;
+    font-weight: bold;
+}
+
+.population-name span {
+    color: #5f6368;
+    font-weight: normal;
+}
+
+.header-actions button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.generate-report {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.run-prediction {
+    background-color: #6200ea;
+    color: white;
+}
+
+.header-actions button:hover {
+    opacity: 0.9;
+}
+
+/* Details Grid */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.detail-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.detail-item strong {
+    color: #5f6368;
+    font-size: 12px;
+}
+
+.detail-item p {
+    color: #202124;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+/* Status styling */
+.status-active {
+    color: #34a853;
+    font-weight: bold;
+}
+
+/* Creator initials */
+.creator-initials {
+    background-color: #6200ea;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+/* Interactive elements */
+.add-description, .add-line {
+    color: #6200ea;
+    cursor: pointer;
+}
+
+.add-description:hover, .add-line:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "Account",
+    "question": "How do I create an account?",
+    "answer": "To create an account, click on the 'Sign Up' button in the top right corner of the homepage, and fill in your details."
+  },
+  {
+    "id": 2,
+    "category": "Account",
+    "question": "How do I reset my password?",
+    "answer": "Click on the 'Forgot Password?' link on the login page, enter your email address, and follow the instructions sent to your email."
+  },
+  {
+    "id": 3,
+    "category": "General",
+    "question": "How do I contact customer support?",
+    "answer": "You can contact customer support by clicking the 'Contact Us' link in the footer of any page and filling out the contact form."
+  },
+  {
+    "id": 4,
+    "category": "Account",
+    "question": "How do I delete my account?",
+    "answer": "To delete your account, go to 'Account Settings', scroll down to the 'Delete Account' section, and follow the prompts."
+  },
+  {
+    "id": 5,
+    "category": "Billing",
+    "question": "How do I update my payment information?",
+    "answer": "To update your payment information, navigate to 'Billing' in your account settings and click 'Update Payment Method'."
+  },
+  {
+    "id": 6,
+    "category": "Billing",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept major credit cards, PayPal, and bank transfers."
+  },
+  {
+    "id": 7,
+    "category": "Subscription",
+    "question": "How do I upgrade my subscription?",
+    "answer": "To upgrade your subscription, go to 'Subscription' in your account settings and choose your desired plan."
+  },
+  {
+    "id": 8,
+    "category": "Subscription",
+    "question": "How do I cancel my subscription?",
+    "answer": "You can cancel your subscription by visiting the 'Subscription' page in your account settings and clicking 'Cancel Subscription'."
+  },
+  {
+    "id": 9,
+    "category": "Technical Support",
+    "question": "What should I do if I encounter an error on the website?",
+    "answer": "If you encounter an error, try refreshing the page or clearing your browser cache. If the issue persists, contact customer support for assistance."
+  },
+  {
+    "id": 10,
+    "category": "Privacy",
+    "question": "How is my data being used?",
+    "answer": "Your data is used in accordance with our Privacy Policy, which outlines how we collect, use, and protect your information."
+  },
+  {
+    "id": 11,
+    "category": "Privacy",
+    "question": "How do I change my privacy settings?",
+    "answer": "To change your privacy settings, go to 'Privacy Settings' in your account and adjust your preferences accordingly."
+  },
+  {
+    "id": 12,
+    "category": "General",
+    "question": "How do I unsubscribe from email notifications?",
+    "answer": "To unsubscribe from email notifications, click the 'Unsubscribe' link at the bottom of any email or manage your preferences in 'Notification Settings'."
+  },
+  {
+    "id": 13,
+    "category": "Account",
+    "question": "How do I update my profile information?",
+    "answer": "To update your profile information, go to 'Profile Settings' and edit the fields you wish to update."
+  },
+  {
+    "id": 14,
+    "category": "Security",
+    "question": "How do I enable two-factor authentication (2FA)?",
+    "answer": "To enable two-factor authentication, go to 'Security Settings' and follow the instructions to set up 2FA for your account."
+  },
+  {
+    "id": 15,
+    "category": "Security",
+    "question": "What should I do if I think my account has been compromised?",
+    "answer": "If you think your account has been compromised, change your password immediately and contact customer support for further assistance."
+  }
+]

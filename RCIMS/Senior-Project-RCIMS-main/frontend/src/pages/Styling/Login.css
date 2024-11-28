@@ -1,0 +1,144 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    width: 90%;
+    max-width: 12   00px;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left section (form section) */
+.login-box {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Ensure inputs are stacked vertically */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.2);
+}
+
+.login-button {
+    background-color: #004d40;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #003d33;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #004d40;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Right section (info section) */
+.info-box {
+    flex: 1;
+    padding: 60px;
+    background-color: #e0f2f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-box h1 {
+    font-size: 36px;
+    color: #004d40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.info-box p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.login{
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .info-box {
+        padding: 30px;
+    }
+    .login-box {
+        padding: 30px;
+    }
+}

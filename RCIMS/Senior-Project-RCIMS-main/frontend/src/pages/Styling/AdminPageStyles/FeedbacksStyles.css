@@ -1,0 +1,156 @@
+.feedbacks-container {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 10px 0 10px;
+}
+
+.feedbacks-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.feedback-item {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(221, 216, 216);
+    background-color: white;
+}
+
+hr {
+    margin: 10px 0;
+    border: 1px solid rgb(216, 213, 213);
+}
+
+.feedback-type {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-info p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.feedback-type p strong {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+.feedback-info p:last-child {
+    margin: 10px 0 5px 0;
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+}
+
+:root {
+    --color-complaint: rgba(255, 0, 0, 0.219);
+    --color-gratitude: rgba(0, 255, 0, 0.349);
+    --color-suggestion: rgba(0, 119, 255, 0.315);
+    --color-other: rgba(255, 255, 0, 0.384);
+    --color-read: rgba(255, 255, 255, 0.5);
+    --color-text-read: rgb(194, 189, 189);
+    --color-text-complaint: rgb(255, 0, 0);
+}
+
+.feedback-filters div {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.feedback-filters div select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 14px;
+    width: 40%;
+}
+.feedback-details-view {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.feedback-details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    margin-right: 15px;
+}
+
+.feedback-details-header h3 {
+    color: #333;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.feedback-details-view p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.feedback-details-view strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.feedback-message {
+    background-color: #ffffff;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.feedback-type-badge {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+}
+
+.feedback-date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.feedback-section {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.feedback-section-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.feedback-section p {
+    margin-bottom: 8px;
+}

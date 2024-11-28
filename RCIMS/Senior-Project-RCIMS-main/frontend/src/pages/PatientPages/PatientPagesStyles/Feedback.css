@@ -1,0 +1,52 @@
+.feedback-type {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.feedback-type > div {
+  margin-right: 20px;
+}
+
+.feedback-type input[type="radio"] {
+  display: none;
+}
+
+.feedback-type label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.feedback-type label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.feedback-type input[type="radio"]:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+}

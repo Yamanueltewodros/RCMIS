@@ -1,0 +1,63 @@
+/* Medical History Page Styles */
+.medical-history-page {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .medical-history-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+  }
+  
+  .history-section {
+    margin-bottom: 30px;
+  }
+  
+  .history-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .history-card {
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .history-card p strong {
+    color: #2c3e50;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .medical-history-page {
+      padding: 15px;
+    }
+  
+    .history-section h3 {
+      font-size: 16px;
+    }
+  
+    .history-card {
+      padding: 12px;
+    }
+  
+    .history-card p {
+      font-size: 13px;
+    }
+  }
+  

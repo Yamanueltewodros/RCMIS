@@ -1,0 +1,65 @@
+/* .appointments-page {
+  padding: 20px;
+} */
+
+/* Tabs Container */
+.tabs {
+  display: flex;
+  justify-content: start;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Tab Button */
+.tab-button {
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 10px 15px; */
+  font-size: 14px;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  /* transition: all 0.3s ease; */
+
+}
+
+.tab-button.active {
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-weight: bold;
+  /* color: #003c1c; Active text color (dark green) */
+  border-bottom: 3px solid #3498db; /* Blue color for active tab */
+  color: #555;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+/* Underline when active */
+/* .tab-button.active::after {
+  border: none;
+  outline: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  color: #3498db;
+  bottom: -1px;
+  left: 0;
+  border-bottom: 3px solid #3498db; 
+} */
+
+.tab-button:hover {
+  border-bottom: 3px solid #3498db; /* Same blue on hover */
+  color: #3498db;
+  /* color: #333; Darker gray on hover */
+
+}
+
+.tab-content {
+  margin-top: 20px;
+}

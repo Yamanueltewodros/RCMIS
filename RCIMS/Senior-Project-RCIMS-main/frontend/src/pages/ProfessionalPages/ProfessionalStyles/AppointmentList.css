@@ -1,0 +1,51 @@
+.appointments-list-container {
+    padding: 20px;
+}
+
+.appointments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.appointment-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.appointment-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.appointment-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-details {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+}

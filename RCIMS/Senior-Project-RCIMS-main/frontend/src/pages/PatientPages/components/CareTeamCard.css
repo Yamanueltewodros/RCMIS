@@ -1,0 +1,118 @@
+/* General Container Styles */
+.care-team-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .care-team-container h2 {
+    padding: 10px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .care-team-container p {
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .care-team-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 16px; */
+    padding: 10px;
+  }
+  
+  .care-team-card {
+
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+  }
+  
+  .care-team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .care-team-info h4 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .care-team-info p {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Action Buttons (for Calendar and Messaging) */
+  .care-team-actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  
+  .icon-btn {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .icon-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .icon-btn i {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* "See All" Button */
+  .see-all {
+    margin-top: 16px;
+    text-align: right;
+  }
+  
+  .see-all button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .see-all button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Behavior */
+  @media (max-width: 768px) {
+    .care-team-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

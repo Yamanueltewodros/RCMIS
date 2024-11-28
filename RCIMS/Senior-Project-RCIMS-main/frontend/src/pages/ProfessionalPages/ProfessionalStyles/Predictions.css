@@ -1,0 +1,97 @@
+.relapse-form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #003c1c;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: #003c1c;
+}
+
+.required-asterisk {
+    color: red;
+}
+
+form .column {
+    display: flex;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
