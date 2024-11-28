@@ -1,0 +1,104 @@
+/* Help.css */
+
+.help-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 60px;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.help-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.help-header h1 {
+  font-size: 2.5em;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.help-search {
+  width: 40%;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.help-search:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 15px rgba(30, 58, 138, 0.3);
+}
+
+.help-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.category-card {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h3 {
+  color: #1e3a8a;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 1em;
+  color: #4b5563;
+}
+
+.contact-support {
+  text-align: center;
+  padding: 40px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.contact-button {
+  background-color: #ffffff;
+  color: #1e3a8a;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}

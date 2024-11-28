@@ -1,0 +1,221 @@
+General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100vw;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed; /* Fix the sidebar */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    /* background-color: #F3F4F6; */
+    background-color: #ffffff;
+    border-color: #333;
+  }
+  
+  .sidebar .logo {
+    max-height: 80px;
+    display: flex;
+    align-items:left;
+    justify-content: center;
+    /* text-align: center; */
+  }
+
+  .logo h2{
+    align-self: center;
+    justify-self: center;
+  }
+
+  
+  .sidebar img {
+    max-width: 20px;
+    max-height: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  } */
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .menu-item {
+    font-size: 16px;
+    color: #333;
+    /* color: #333; */
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-title{
+    padding-left:10px;
+  }
+
+  
+  .menu-item.active {
+    color: rgb(58, 156, 237);
+    /* background-color: #2980b9; */
+    background-color: rgba(240, 255, 255, 0.707);
+  }
+  
+  .menu-item:hover {
+    /* background-color: #34495e; */
+    background-color: rgba(240, 255, 255, 0.707);
+
+  }
+  
+  /* Main Content */
+
+  
+  /* Sticky Navbar */
+  .Navbar {
+    position: fixed; /* Fix the navbar */
+    top: 0;
+    left: 250px; /* Adjust for the sidebar's width */
+    width: calc(100vw - 250px);
+    height: 80px;
+    background-color: #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-color: #333;
+  }
+  
+
+  .Navbar h1{
+    margin-bottom: 20px;
+    padding-left: 50px;
+
+  }
+  .Navbar h3{
+    padding-left: 60px;
+    padding-bottom: 20px;
+  }
+  .NavbarSetting{
+    display: flex;
+    flex-shrink: 1;
+   
+  }
+
+  .main-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    margin-top: 80px; /* Adjust for the navbar height */
+    padding: 10px;
+    background-color: #f3f4f6;
+    overflow-y: none;
+    height: calc(100vh - 60px); /* Ensure full height */
+    width: calc(100vw - 250px); 
+
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      display: none;
+      height: auto;
+      position: relative;
+    }
+   .main-content{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  
+    .Navbar {
+      left: 0;
+      width: 100%;
+    }
+  }
+  
+/* Container for current appointment */
+.current-appointment-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Appointment title styling */
+.appointment-title {
+  font-size: 1.6rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling for each detail row */
+.appointment-details p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Styling for icons */
+.appointment-icon {
+  color: #4a90e2;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* No upcoming appointment text styling */
+.no-appointment-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+/* Status badge styling */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.status-badge.active {
+  background-color: #4caf50; /* Green for active */
+}
+
+.status-badge.canceled {
+  background-color: #f44336; /* Red for canceled */
+}
+
+.status-badge.pending {
+  background-color: #ff9800; /* Orange for pending */
+}

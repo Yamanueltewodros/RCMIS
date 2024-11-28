@@ -1,0 +1,261 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    background-color: #f9fafc;
+    height: 100%;
+    width: 100%;
+    color: #333;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 140px;
+    margin-bottom: 20px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+}
+
+.Menu-icon {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    font-size: 16px;
+    color: #555;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item .icon {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #007bff; /* Icon color */
+}
+
+.menu-item.active, .menu-item:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.menu-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 260px;
+    width: calc(100vw - 260px);
+    height: calc(100vh - 100px);
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f0f4f7;
+}
+
+/* Spacing between sections */
+.header, .dashboard {
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+}
+
+.welcome-message h1 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.welcome-message p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Dashboard cards */
+.cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.increase {
+    color: #00c851;
+}
+
+/* Statistics and Calendar sections */
+.StatAndCal {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 700px;
+}
+
+.calendar {
+    padding: 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    width: 50%;
+}
+
+.statistics {
+    width: 50%;
+    background-color: none;
+}
+
+/* Placeholder styling */
+.chart-placeholder, .calendar-placeholder {
+    background-color: #e9ecef;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Media Queries for smaller screen adjustments */
+@media (max-width: 1300px) {
+    .StatAndCal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .statistics, .calendar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .Menu-icon {
+        display: block;
+    }
+
+    .main-content {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-message h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message p {
+        font-size: 0.875rem;
+    }
+
+    .card h2 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.875rem;
+    }
+}

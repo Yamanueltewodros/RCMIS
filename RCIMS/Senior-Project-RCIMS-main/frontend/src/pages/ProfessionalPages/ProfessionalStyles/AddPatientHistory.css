@@ -1,0 +1,81 @@
+.add-patient-history {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .back-button {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.patient-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wide-textarea-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of the container */
+}
+
+.wide-textarea {
+  width: 100%; 
+  height: 250px; 
+  padding: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: both; 
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #003d33;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

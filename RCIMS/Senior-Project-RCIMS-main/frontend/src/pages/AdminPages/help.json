@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "category": "Account",
+      "question": "How do I create an account?",
+      "answer": "To create an account, click on the 'Sign Up' button in the top right corner of the homepage, and fill in your details."
+    },
+    {
+      "id": 2,
+      "category": "Account",
+      "question": "How do I reset my password?",
+      "answer": "Click on the 'Forgot Password?' link on the login page, enter your email address, and follow the instructions sent to your email."
+    },
+    {
+      "id": 3,
+      "category": "General",
+      "question": "How do I contact customer support?",
+      "answer": "You can contact customer support by clicking the 'Contact Us' link in the footer of any page and filling out the contact form."
+    }
+  ]
+  

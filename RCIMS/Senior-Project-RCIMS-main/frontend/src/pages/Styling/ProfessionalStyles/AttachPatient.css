@@ -1,0 +1,114 @@
+/* Main container for the form */
+.attach-detach-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page heading */
+.attach-detach-container h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form structure */
+.attach-detach-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.attach-detach-container label {
+    margin: 15px 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+}
+
+/* Input fields (text, select) */
+.attach-detach-container input[type="text"],
+.attach-detach-container select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Hover and focus effects */
+.attach-detach-container input[type="text"]:hover,
+.attach-detach-container select:hover {
+    border-color: #777777;
+}
+
+.attach-detach-container input[type="text"]:focus,
+.attach-detach-container select:focus {
+    border-color: #1d72b8;
+    outline: none;
+    box-shadow: 0 0 6px rgba(29, 114, 184, 0.5);
+}
+
+/* Button styling */
+.attach-detach-container button {
+    background-color: #1d72b8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Button hover and active effects */
+.attach-detach-container button:hover {
+    background-color: #155a99;
+    transform: translateY(-2px);
+}
+
+.attach-detach-container button:active {
+    transform: translateY(0);
+}
+
+/* Message box styling */
+.attach-detach-container p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.attach-detach-container p.success {
+    color: #28a745;
+}
+
+.attach-detach-container p.error {
+    color: #dc3545;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .attach-detach-container {
+        padding: 20px;
+    }
+
+    .attach-detach-container h2 {
+        font-size: 24px;
+    }
+
+    .attach-detach-container button {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+}

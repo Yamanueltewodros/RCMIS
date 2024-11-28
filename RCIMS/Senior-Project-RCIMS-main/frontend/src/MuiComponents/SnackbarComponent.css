@@ -1,0 +1,65 @@
+/* General Snackbar Styling */
+.snackbar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 16px;
+    border-radius: 4px;
+    color: white;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Animations */
+  }
+  
+  /* Success Snackbar */
+  .snackbar-success {
+    background-color: #4caf50;
+  }
+  
+  /* Error Snackbar */
+  .snackbar-error {
+    background-color: #f44336;
+  }
+  
+  /* Info Snackbar */
+  .snackbar-info {
+    background-color: #2196f3;
+  }
+  
+  /* Warning Snackbar */
+  .snackbar-warning {
+    background-color: #ff9800;
+  }
+  
+  /* Close Button Styling */
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  /* Fade-in and fade-out animations */
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

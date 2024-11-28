@@ -1,0 +1,89 @@
+/* General Report Page Styles */
+.general-report-page {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .general-report-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-align: center;
+  }
+  
+  .report-form{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+  }
+  .form-group {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: none;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 5px;
+  }
+  
+  #upload-documents{
+    padding: 30px;
+    
+
+  }
+  .submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .general-report-page {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+    }
+  }
+  

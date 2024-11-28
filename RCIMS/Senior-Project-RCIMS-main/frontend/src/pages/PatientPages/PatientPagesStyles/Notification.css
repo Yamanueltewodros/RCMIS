@@ -1,0 +1,78 @@
+/* Notification List Page Styles */
+.notification-list-page {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .notification-list-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-align: center;
+  }
+  
+  .notification-list {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .notification-subject {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  
+  .notification-date {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #999;
+    margin-left: 20px;
+  }
+  
+  /* Unread notifications are bold */
+  .unread .notification-subject {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Read notifications have regular font */
+  .read .notification-subject {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .notification-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .notification-date {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+
+/* Main Container */
+.details-container {
+  width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f0f5;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  align-items: left;
+}
+.details-container .header{
+  display: flex;
+}
+
+/* Back Button */
+.back-button {
+  flex: 1;
+  display: inline-block;
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patient-name{
+  margin-left: 20px;
+  display: flex;
+  flex: 5;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  
+}
+
+h3 {
+  text-align: center;
+  color: #1c3e75;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: #1c3e75;
+}
+
+
+.container {
+display: flex;
+width: 100%;
+
+
+}
+
+.column1{
+  flex: 1 1 0px;
+  gap: 1rem; 
+  padding: 10px;
+}
+.column2{
+  flex: 1 1 0px;
+  gap: 1rem;
+  padding: 10px; 
+}
+.detail-item{
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.detail-item p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.detail-item strong {
+  font-size: 15px;
+  color: #000;
+}
+
+.action-buttons {
+
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.edit-button,
+.CareGiver-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #1c3e75;
+  color: white;
+}
+
+.edit-button {
+  background-color: #1c3e75;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0f2954;
+  color: white;
+}
+
+.cancel-button {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.cancel-button:hover{
+  background-color: red;
+  color: white;
+}
+
+.icons-section {
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.icon-item {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  
+}
+
+
+.icon-item p {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #333;
+}
+

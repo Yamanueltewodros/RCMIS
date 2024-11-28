@@ -1,0 +1,219 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100vw; /* Ensure full width coverage */
+    height: 100vh; /* Full height to cover the screen */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.logo h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensure no default margin */
+}
+
+.menu-item {
+    font-size: 16px;
+    color: #333;
+    padding: 10px 15px; /* Increased padding for better spacing */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Add space between menu items */
+    transition: background-color 0.3s;
+}
+
+.menu-item .icon {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 18px; /* Adjust icon size for better visibility */
+}
+
+.menu-item.active, .menu-item:hover {
+    background-color: #e6f7ff;
+    border-radius: 8px;
+}
+
+/* Ensure no additional spacing issue */
+.menu-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1; /* Make main content take the rest of the space */
+    padding: 30px; /* Increase padding for main content */
+    overflow-y: auto; /* Scroll for smaller screens */
+    min-height: 100vh; /* Ensure the main content fills the entire height */
+    background-color: #f0f2f5; /* Adjust background if needed */
+}
+
+/* Spacing between sections */
+.header, .dashboard {
+    margin-bottom: 30px; /* Increase space between sections */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Increased padding */
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.welcome-message h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.welcome-message p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap between sections */
+}
+
+.cards {
+    display: grid;
+    gap: 30px; /* Increased gap between cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    flex: 1;
+    padding: 25px; /* Increased padding inside cards */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.increase {
+    color: green;
+}
+
+/* Statistics and Calendar sections */
+.statistics, .calendar {
+    padding: 25px; /* Increased padding */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart-placeholder, .calendar-placeholder {
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+/* Media Queries for smaller screen adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack sidebar and content on top of each other */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto; /* Make the sidebar fit the screen on smaller devices */
+        position: relative;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column; /* Stack the welcome message and search bar */
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr; /* Make the cards stack vertically on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-message h1 {
+        font-size: 1.25rem;
+    }
+
+    .welcome-message p {
+        font-size: 0.875rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.875rem;
+    }
+}

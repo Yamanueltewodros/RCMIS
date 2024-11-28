@@ -1,0 +1,39 @@
+.patient-history-page {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+  }
+  
+  .btn-back {
+    margin-bottom: 15px;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
