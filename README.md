@@ -9,7 +9,7 @@ The Rehabilitation Center Management Information System (RCMIS) is a comprehensi
 
 ---
 
-###Features
+Features
 
 - User Roles: Role-based access for Admins, Professionals, and Patients.
 - Patient Management: Add, view, edit, and discharge patients with detailed records.
