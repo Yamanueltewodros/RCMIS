@@ -21,7 +21,7 @@ Features
 
 ---
 
- ##Tech Stack
+Tech Stack
  Frontend:
 - React.js: For building a dynamic and responsive user interface.
 - Material-UI/Bootstrap: For modern and accessible UI components.
