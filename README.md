@@ -130,7 +130,7 @@ We welcome contributions! Please follow these steps:
 
  Contact
 
-For questions or feedback, contact:
+For questions:
 
 Yamanuel Tewodros  
 📧 Email: yamanueltewodros@gmail.com  
